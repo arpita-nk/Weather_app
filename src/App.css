@@ -1,0 +1,87 @@
+.App {
+  display: flex;
+}
+
+.top-section {
+  padding: 5rem;
+}
+
+.heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.unit_convertion {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.btn:focus {
+  outline: none !important;
+  outline-offset: none !important;
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+.degree_c,
+.degree_c:hover {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.degree_f,
+.degree_f:hover {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.degree_c:active,
+.degree_f:active {
+  background: black;
+  color: white;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active {
+  background: black;
+  color: white;
+}
+
+
+/* responsive */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+  }
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .top-section {
+    padding: 3rem;
+  }
+
+  .unit_convertion {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+}

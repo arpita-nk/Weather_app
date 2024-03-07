@@ -1,0 +1,74 @@
+.container-fluid {
+  width: 100%;
+}
+
+.row_1,
+.row_2 {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.row_2 {
+  margin-top: 45px;
+  /* top: 45px; */
+}
+
+.card_text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: larger;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.card_title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: larger;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.card_humididty,
+.card_wind,
+.card_cloud,
+.card_pressure,
+.card_sunrise,
+.card_sunset {
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 20rem;
+  width: 30rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.humidity,
+.wind,
+.clouds,
+.uv,
+.sunrise,
+.sunset {
+  width: 85px;
+}
+
+.pressure {
+  width: 70px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container-fluid {
+    padding: 0px;
+    margin: 0px;
+  }  
+
+  .row_1,
+  .row_2 {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 25px; 
+  }
+
+  .row_2 {
+    margin-top: 0px;
+    /* top: 45px; */
+  }
+}
